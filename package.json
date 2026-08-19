@@ -1,0 +1,14 @@
+{
+  "name": "teste-tecnico-estoque-faturamento",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": ["frontend", "services/*"],
+  "scripts": {
+    "dev": "concurrently -n ESTOQUE,FATURAMENTO,WEB -c green,cyan,magenta \"npm run dev -w services/stock-service\" \"npm run dev -w services/billing-service\" \"npm start -w frontend\"",
+    "build": "npm run build -w frontend",
+    "test": "npm run test -w services/stock-service && npm run test -w services/billing-service",
+    "start:stock": "npm start -w services/stock-service",
+    "start:billing": "npm start -w services/billing-service"
+  },
+  "devDependencies": { "concurrently": "^9.1.2" }
+}

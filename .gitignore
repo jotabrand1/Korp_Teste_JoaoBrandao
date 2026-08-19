@@ -1,0 +1,10 @@
+node_modules/
+dist/
+coverage/
+*.db
+*.db-shm
+*.db-wal
+.angular/
+.env
+demo/screenshots/
+demo/*.mp4
