@@ -33,4 +33,3 @@ Ao criar uma nota, o Faturamento valida os produtos e obtém seus dados oficiais
 
 Se aparecer `EADDRINUSE`, já existe uma instância nas mesmas portas. Encerre o terminal anterior com `Ctrl+C`; se necessário, execute `Get-Process node -ErrorAction SilentlyContinue | Stop-Process` e inicie novamente.
 
-Consulte [docs/DETALHAMENTO-TECNICO.md](docs/DETALHAMENTO-TECNICO.md) e [demo/ROTEIRO-VIDEO.md](demo/ROTEIRO-VIDEO.md).
